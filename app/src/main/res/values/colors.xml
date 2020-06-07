@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2a2828</color>
+    <color name="colorPrimaryDark">#0d0d0d</color>
+    <color name="colorAccent">#eecfcf</color>
+    <color name="background">#636060</color>
+    <color name="sub_title">#7C7B7B</color>
+    <color name="add_favorite">#03DAC5</color>
+    <color name="delete_favorite">#FF9800</color>
+    <color name="win">#189B1E</color>
+    <color name="draw">#797170</color>
+    <color name="loss">#F44336</color>
+    <color name="goals">#3F51B5</color>
+</resources>

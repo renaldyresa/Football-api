@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Sub2KotlinExpert</string>
+    <string name="desc_logo">logo league</string>
+    <string name="txt_desc">Description</string>
+
+    <string name="txt_detail">Detail</string>
+    <string name="txt_classement">Classement</string>
+    <string name="txt_team">Team</string>
+    <string name="txt_next_match">Next Match</string>
+    <string name="txt_previous_match">Previous Match</string>
+    <string name="txt_space_score">:</string>
+    <string name="txt_goals_score">Goals Scored</string>
+    <string name="txt_shots">Shots</string>
+    <string name="txt_yellow_card">Yellow Cards</string>
+    <string name="txt_red_card">Red Cards</string>
+    <string name="txt_vs">VS</string>
+    <string name="txt_round">Round %d</string>
+    <string name="search_title">Search Match</string>
+    <string name="search_hint">Search match team</string>
+    <string name="title_main_activity">Football League</string>
+    <string name="txt_delete">Delete</string>
+    <string name="txt_no_data">No Data</string>
+    <string name="txt_favorite_match">Favorite Match</string>
+    <string name="txt_add_favorite_match">Add Favorite Match</string>
+    <string name="txt_delete_from_favorite">Delete From Favorite</string>
+    <string name="txt_add_team_favorite">Add Team Favorite</string>
+    <string name="txt_info">Info</string>
+    <string name="txt_alternative_name">Alternative Name</string>
+    <string name="txt_stadium">Stadium</string>
+    <string name="txt_location">Location</string>
+    <string name="txt_country">Country</string>
+    <string name="txt_league">League</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txt_match">Match</string>
+    <string name="txt_fail">Failed Load Data</string>
+    <string name="txt_favorite">Favorite</string>
+</resources>

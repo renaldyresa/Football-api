@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/tv_league"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="name league" />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_league"
+            app:layout_constraintStart_toStartOf="@+id/tv_league"
+            app:layout_constraintTop_toBottomOf="@+id/tv_league"
+            tools:text="time match" />
+
+        <ImageView
+            android:id="@+id/iv_home_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/desc_logo"
+            app:layout_constraintEnd_toStartOf="@+id/tv_txt_vs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_datetime"
+            app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_txt_vs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_vs"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_home_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_home_logo" />
+
+        <ImageView
+            android:id="@+id/iv_away_logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/desc_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_home_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_txt_vs"
+            app:layout_constraintTop_toTopOf="@+id/iv_home_logo"
+            app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_home_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_home_logo"
+            app:layout_constraintStart_toStartOf="@+id/iv_home_logo"
+            app:layout_constraintTop_toBottomOf="@+id/iv_home_logo"
+            tools:text="Arsenal" />
+
+        <TextView
+            android:id="@+id/tv_away_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_away_logo"
+            app:layout_constraintStart_toStartOf="@+id/iv_away_logo"
+            app:layout_constraintTop_toBottomOf="@+id/iv_away_logo"
+            tools:text="Chelsea" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_delete_favorite_match"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/delete_favorite"
+            android:gravity="center"
+            android:src="@drawable/ic_delete_24dp"
+            android:text="@string/txt_delete"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_delete_24dp"
+            app:iconGravity="textStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_home_team" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+

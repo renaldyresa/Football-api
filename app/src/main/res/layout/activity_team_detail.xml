@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_top_team_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingBottom="8dp"
+            tools:context=".view.teamdetail.TeamDetailActivity">
+
+            <ProgressBar
+                android:id="@+id/pb_team_detail"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:indeterminate="true"
+                android:paddingHorizontal="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_team_logo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="@string/desc_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_photo_camera_black_24dp"
+                app:civ_border_overlay="false"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/add_favorite"
+                app:civ_circle_background_color="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tv_team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                tools:text="Team name"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/iv_team_logo"
+                app:layout_constraintStart_toStartOf="@+id/iv_team_logo"
+                app:layout_constraintTop_toBottomOf="@+id/iv_team_logo" />
+
+            <TextView
+                android:id="@+id/tv_formed_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                tools:text="Formed Year"
+                android:textColor="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tv_team_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_team_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_team_name" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_add_team_favorite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/background"
+                android:text="@string/txt_add_team_favorite"
+                app:icon="@drawable/ic_add"
+                app:iconGravity="textStart"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_formed_year" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/tv_txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/txt_info"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_txt_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/txt_league"
+                app:layout_constraintStart_toStartOf="@+id/tv_txt_info"
+                app:layout_constraintTop_toTopOf="@+id/tv_league" />
+
+            <TextView
+                android:id="@+id/tv_txt_alternative_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_alternative_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_txt_league"
+                app:layout_constraintTop_toTopOf="@+id/tv_alternative_name" />
+
+            <TextView
+                android:id="@+id/tv_txt_stadium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_stadium"
+                app:layout_constraintStart_toStartOf="@+id/tv_txt_alternative_name"
+                app:layout_constraintTop_toTopOf="@+id/tv_stadium" />
+
+            <TextView
+                android:id="@+id/tv_txt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_location"
+                app:layout_constraintStart_toStartOf="@+id/tv_txt_stadium"
+                app:layout_constraintTop_toTopOf="@+id/tv_location" />
+
+            <TextView
+                android:id="@+id/tv_txt_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_country"
+                app:layout_constraintStart_toStartOf="@+id/tv_txt_location"
+                app:layout_constraintTop_toTopOf="@+id/tv_country" />
+
+            <TextView
+                android:id="@+id/tv_league"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_alternative_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_alternative_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_txt_info"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_alternative_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_txt_alternative_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_league"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_stadium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_alternative_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_alternative_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_alternative_name"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_stadium"
+                app:layout_constraintStart_toStartOf="@+id/tv_stadium"
+                app:layout_constraintTop_toBottomOf="@+id/tv_stadium"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_location"
+                app:layout_constraintStart_toStartOf="@+id/tv_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_txt_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/txt_desc"
+                android:textAllCaps="true"
+                android:textIsSelectable="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_txt_desc"
+                tools:text="Description Team" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="3dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_country" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
